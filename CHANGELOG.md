@@ -3,7 +3,7 @@
 All notable changes of this fork are documented in this file.
 For releases up to 1.4.5, see the [original repository](https://github.com/DantSu/php-image-editor).
 
-## [Unreleased] - 1.5.0
+## [1.5.0] - 2026-11-15 
 
 First release of the fork `gexo/php-image-editor`.
 

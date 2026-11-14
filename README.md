@@ -1,6 +1,5 @@
 [![CI](https://github.com/gexo/php-image-editor/actions/workflows/ci.yml/badge.svg)](https://github.com/gexo/php-image-editor/actions/workflows/ci.yml)
-[![Packagist](https://img.shields.io/packagist/dt/gexo/php-image-editor.svg)](https://packagist.org/packages/gexo/php-image-editor)
-[![Latest Stable Version](https://poser.pugx.org/gexo/php-image-editor/v/stable)](https://packagist.org/packages/gexo/php-image-editor)
+[![Latest tag](https://img.shields.io/github/v/tag/gexo/php-image-editor?sort=semver)](https://github.com/gexo/php-image-editor/tags)
 [![GitHub license](https://img.shields.io/github/license/gexo/php-image-editor.svg)](https://github.com/gexo/php-image-editor/blob/master/LICENSE)
 
 # PHP Image Editor
@@ -23,11 +22,24 @@ packages that depend on `dantsu/php-image-editor` will use this fork instead of 
 
 ## Installation
 
-Install this library easily with composer :
+This fork is not published on Packagist. Add the repository to the `composer.json` of your project:
 
-```cmd
-composer require gexo/php-image-editor
+```json
+{
+  "repositories": [
+    { "type": "vcs", "url": "https://github.com/gexo/php-image-editor" }
+  ],
+  "require": {
+    "gexo/php-image-editor": "^1.5"
+  }
+}
 ```
+
+Then run `composer update gexo/php-image-editor`.
+
+Composer only reads `repositories` from the root `composer.json` of a project, not from dependencies. If you use this
+package indirectly (e.g. through [gexo/php-osm-static-api](https://github.com/gexo/php-osm-static-api)), the repository
+entry above is still required in your project.
 
 ## How to use
 
